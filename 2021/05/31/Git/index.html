@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Github - KAFNO</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="GJRegan,"> 
+    <meta name="description" content="blog,Github1.应用借助github托管项目代码
+2.基本概念仓库（Repository）
+收藏(Star)
+复制克隆项目(Fork)
+发起请求(Pull Request)
+关注项目(Watch)
+,"> 
+    <meta name="author" content="GJRegan"> 
+    <link rel="alternative" href="atom.xml" title="KAFNO" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">KAFNO</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://GJRegan.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Github</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Github</h1>
+        <div class="stuff">
+            <span>五月 31, 2021</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Git/" rel="tag">Git</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Gitub/" rel="tag">Gitub</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h1 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h1><h4 id="1-应用"><a href="#1-应用" class="headerlink" title="1.应用"></a>1.应用</h4><p>借助github托管项目代码</p>
+<h4 id="2-基本概念"><a href="#2-基本概念" class="headerlink" title="2.基本概念"></a>2.基本概念</h4><p>仓库（Repository）</p>
+<p>收藏(Star)</p>
+<p>复制克隆项目(Fork)</p>
+<p>发起请求(Pull Request)</p>
+<p>关注项目(Watch)</p>
+<p>讨论问题(Issue)</p>
+<blockquote>
+<p>搜索仓库文件快捷键:T</p>
+</blockquote>
+<h4 id="3-Git"><a href="#3-Git" class="headerlink" title="3.Git"></a>3.Git</h4><p>通过git管理github托管项目代码</p>
+<h5 id="Git工作区域"><a href="#Git工作区域" class="headerlink" title="Git工作区域"></a>Git工作区域</h5><ol>
+<li><p>Git Repository(Git仓库) </p>
+<p>最终确定的文件保存到仓库，成为一个新的版本，并且对他人可见</p>
+<p>git status</p>
+</li>
+<li><p>暂存区</p>
+<p>暂存已经修改的文件最后统一提交到git仓库</p>
+<p>git status</p>
+<p>git commit -m “提交描述” <code>将文件从暂存区提交到仓库</code></p>
+</li>
+<li><p>工作区</p>
+<p>添加，编辑，修改文件等动作</p>
+<p>git status</p>
+<p>git add</p>
+</li>
+</ol>
+<h5 id="Git基础设置"><a href="#Git基础设置" class="headerlink" title="Git基础设置"></a>Git基础设置</h5><p>​    1.设置用户名 </p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 配置用户名</span></span><br><span class="line">git config --<span class="keyword">global</span> user.name <span class="string">&#x27;Your Name&#x27;</span></span><br><span class="line"><span class="comment">//（ &quot;username&quot;是自己的账户名）</span></span><br></pre></td></tr></table></figure>
+
+<p>​    2.设置用户名邮箱</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 配置邮箱</span></span><br><span class="line">git config --<span class="keyword">global</span> user.email <span class="string">&quot;email@example.com&quot;</span> </span><br><span class="line"><span class="comment">//(&quot;username@email.com&quot;注册账号时用的邮箱)</span></span><br></pre></td></tr></table></figure>
+
+<p>​    3.查看设置</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#查看当前用户（global）配置</span></span><br><span class="line">git config --<span class="keyword">global</span> --<span class="keyword">list</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>解决输入 git config –list 退出的问题</strong></p>
+<p>输入git config –list 最后出现一个 (END) ，要等一会才能退出来，这个怎么解决?</p>
+<p>原因： git日志过多最后显示end无法输入命令，打印的信息是全部用户配置的，表示可以用了。</p>
+<p>直接按 q (或+Enter) ， 即可退出</p>
+<h5 id="Git-Bash"><a href="#Git-Bash" class="headerlink" title="Git Bash"></a>Git Bash</h5><h5 id="Git-基本命令"><a href="#Git-基本命令" class="headerlink" title="Git 基本命令"></a>Git 基本命令</h5><p>1.通过<code>dir</code>查看当前目录文件</p>
+<p>2.通过<code>cd</code>命令进入文件夹，通过cd ..命令返回上一级，也可以使用cd xxx/xxx/xxx一次性直接到达指定位置</p>
+<p>3.通过<code>rm</code>指令删除指定文件</p>
+<p>4.可以通过<code>pwd</code>命令来查看当前是在哪个文件夹进行的操作</p>
+<p>5.<code>mkdir +文件夹名字</code> 只能新建文件夹</p>
+<p>6.<code>touch +文件名</code> 只能新建文件$ mkdir +文件夹名字 只能新建文件夹</p>
+<p>7.<code>rm 文件名.文件类型</code> 删除文件</p>
+<p>8.<code>rm -r 文件夹</code> 删除文件夹 ，注意这个要回到上一级文件夹才可以删。比如我要删除front-end文件夹，front-end在code里边，我就要在code目录下删除。</p>
+<p>9.<code>rm -rf *</code> 这个命令的意思是:删除当前目录下的所有文件.</p>
+<p>10.<code>rm -i</code>：删除已有文件或目录之前先询问用户；</p>
+<h5 id="初始化本地仓库"><a href="#初始化本地仓库" class="headerlink" title="初始化本地仓库"></a>初始化本地仓库</h5><p>进入到你想建立本地仓库的文件夹，它可以是空的，你建好了之后再写代码。里边也可以有东西，直接建就好。</p>
+<p>1.<code>git init</code></p>
+<p>初始化成功之后，你的文件夹里就会多出.git的隐藏文件。 (●′ω`●)千万不要乱删，你如果看他烦你就设置一下不显示隐藏文件。</p>
+<p><code>显示隐藏文件 文件夹-&gt;查看-&gt;隐藏的文件</code></p>
+<h5 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h5><p><strong>Git文件克隆</strong></p>
+<p>克隆就是你本地上没有，你直接把远程仓库的东西搞下来。</p>
+<p>仓库是你自己的，你就使用SSH连接，不是你自己的，你没权限你就切换到HTTPS，再复制地址。<br>它克隆下来是一个文件夹，你想把文件夹放哪里就在哪打开gitbash<br><code>$ git clone 加上你刚才的地址</code></p>
+<p><strong>文件上传</strong><br><code>git add</code> 将修改的文件添加暂存区，也就是将要提交的文件的信息添加到索引库中。（看不懂没关系，现在来说这个不重要）。<br>什么是修改的文件，你新建、更改、删除文件都是修改。<br>git add有好多种。下边我介绍一下，看看就行，对现在来说记住最后一条就可以了：</p>
+<p><code>$ git add +文件名.文件类型</code> ，将某个文件加到缓存区<br><code>$ git add +文件名.文件类型 ... 文件名.文件类型</code> ，将n个文件添加到缓存区<br><code>$ git add xx文件夹/*.html</code>，将xx文件夹下的所有的html文件添加到缓存区。<br><code>$ git add *hhh </code>，将以hhh结尾的文件的所有修改添加到暂存区<br><code>$ git add Hello*</code> ，将所有以Hello开头的文件的修改添加到暂存区<br><code>git add -u</code> ，提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)<br><code>git add .</code>，提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件<br>…<br><code>git add -A</code>，提交所有变化。git add前几条都可以记不住，这个必须记住！！！</p>
+<p> <strong>需要注意的是：</strong><code>不要直接在clone操作的文件夹管理代码，要进到clone后的项目中右键</code></p>
+<blockquote>
+<p>比如我新建一个文件夹叫sc，在sc文件夹上使用git命令克隆一个demo项目，demo项目拉下来后会放在sc文件夹下。这时我们修改了代码，在要提交，还在sc文件夹下提交，git无法显示我们修改的内容，还一 直报错。网上的内容多是强制操作（合并等），并没有指出问题所在。<br>问题是必须在demo文件夹上操作（不是sc）。</p>
+</blockquote>
+<p>**Git push **把文件推到远程仓库<br>向一个空的新仓库中推文件：<code>$ git push -u 仓库名称 分支</code></p>
+<p><strong>分支</strong>：你现在只有主分支，所以分支直接写master。以后合作项目的时候，成员之间建了不同的分支，你就可以往你自己的分支上推。</p>
+<p>我们第一次推送master分支时，加上 –u参数才会把本地的master分支和远程的master分支关联起来，就是告诉远程仓库的master分支，我的本地仓库和是对着你的哦，不是对着别的分支的哦。<br>只有第一次推的时候需要加上-u，以后的推送只输入：<br><code>$ git push 名称 分支</code></p>
+<p><strong>Git push</strong></p>
+<p>  git push的一般形式为 git push &lt;远程主机名&gt; &lt;本地分支名&gt;  &lt;远程分支名&gt; ，例如 git push origin master：refs/for/master ，即是将本地的master分支推送到远程主机origin上的对应master分支， origin 是远程主机名，</p>
+<p>  第一个master是本地分支名，第二个master是远程分支名。</p>
+<p>  <strong>1.1 git push origin master</strong></p>
+<p>​    如果远程分支被省略，如上则表示将本地分支推送到与之存在追踪关系的远程分支（通常两者同名），如果该远程分支不存在，则会被新建</p>
+<p>   <strong>1.2</strong> <strong>git push origin ：refs/for/master</strong> </p>
+<p>　　如果省略本地分支名，则表示删除指定的远程分支，因为这等同于推送一个空的本地分支到远程分支，等同于 git push origin –delete master</p>
+<p>  <strong>1.3</strong> <strong>git push origin</strong></p>
+<p>　　 如果当前分支与远程分支存在追踪关系，则本地分支和远程分支都可以省略，将当前分支推送到origin主机的对应分支 </p>
+<p>　<strong>1.4 git push</strong></p>
+<p>　　如果当前分支只有一个远程分支，那么主机名都可以省略，形如 git push，可以使用git branch -r ，查看远程的分支名</p>
+<h4 id="GitHub教程-SSH-keys配置"><a href="#GitHub教程-SSH-keys配置" class="headerlink" title="GitHub教程 SSH keys配置"></a>GitHub教程 SSH keys配置</h4><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_36667170/article/details/79094257">GitHub教程 SSH keys配置_LolitaSian-CSDN博客</a></p>
+<h4 id="Git操作"><a href="#Git操作" class="headerlink" title="Git操作"></a>Git操作</h4><p><a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600">Git教程 - 廖雪峰的官方网站 (liaoxuefeng.com)</a></p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="http://domain.com/awesome.mp3">
+            </audio>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='false'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
